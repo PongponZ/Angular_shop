@@ -1,0 +1,10 @@
+<div
+    class="item-card"
+    (click)="onClick()"
+>
+    <div class="background-image" [ngStyle]="{'background-image': 'url('+ category.imagePath +')'}"></div>
+    <div class="box">
+        <h2 class="title">{{ category.title }}</h2>
+        <p class="desc">SHOP NOW</p>
+    </div>
+</div>

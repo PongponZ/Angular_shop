@@ -1,0 +1,20 @@
+.cart-icon{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+}
+.cart-icon .shopping-icon{
+    margin-top: 5px;
+    background-image: url("../../../assets/shopping-bag.svg");
+    width: 28px;
+    height: 28px;
+}
+.cart-icon .item-count {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 30%;
+    font-size: 12px;
+    font-weight: bold;
+  }

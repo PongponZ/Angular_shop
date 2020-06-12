@@ -1,0 +1,17 @@
+<div class="product-item ml-3">
+
+    <div class="image" [ngStyle]="{'background-image': 'url('+ imageUrl +')'}"></div>
+
+    <div class='product-item-footer'>
+        <span class="name">{{itemName}}</span>
+        <span class="price">{{price}}</span>
+    </div>
+
+    <div class='box' (click)="onClick()">
+        <h6 class="title">Add to Cart</h6>
+    </div>
+
+</div>
+
+
+

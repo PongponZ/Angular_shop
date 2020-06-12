@@ -1,0 +1,5 @@
+<div class="row" *ngFor = "let title of mytitle">
+    <div class="col col-xl-12">
+        <app-product-list [titlePath] = "title.type"></app-product-list>
+    </div>
+</div>

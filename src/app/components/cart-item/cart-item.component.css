@@ -1,0 +1,24 @@
+.cart-item {
+    width: 100%;
+    display: inline-block;
+    height: 55px;
+    margin-bottom: 15px;
+
+}
+
+.cart-item img{
+    width: 30%;
+    height: 70px;
+    float: left;
+}
+
+.cart-item .item-details{
+    float: left;
+    width: 70%;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+.cart-item .name {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }

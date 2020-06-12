@@ -1,0 +1,23 @@
+<table class="table table-image">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Description</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let item of itemCart">
+            <th><img [src]="item.imageUrl"></th> 
+            <td>{{item.itemName}}</td>
+            <td>{{item.quantity}}</td>
+            <td>${{item.price}}</td>
+            <td><app-button-remove [itemID]="item.id"></app-button-remove></td>
+        </tr>
+
+    </tbody>
+  </table>
+  <h4 style="float: right;margin-bottom: 50px;">Total ${{sumPrice}}</h4>

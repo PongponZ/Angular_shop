@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "interview-shopping",
+      "public": "dist/interview-shopping",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

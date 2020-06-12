@@ -1,0 +1,9 @@
+<h3 class="ml-3 mb-4" style="text-transform: uppercase;">{{ titlePath }}</h3>
+    <app-product-item 
+        *ngFor="let item of myItems"
+        [id]="item.id"
+        [itemName]="item.name"
+        [price]="item.price"
+        [imageUrl]="item.imageUrl"
+    ></app-product-item>
+

@@ -1,0 +1,14 @@
+<ng-template [ngIf]="isToggle">
+    <div class="cart-dropdown">
+        <div class="cart-items">
+            <app-cart-item
+                *ngFor="let item of cartItem"
+                [item] = "item">
+            </app-cart-item>
+
+            <p *ngIf="!cartItem" style="text-align: center; margin-top: 50%;">Your cart is empty</p>
+
+        </div>
+        <button class="btn btn-success" (click)="onClick()">CHECK OUT</button>
+    </div>
+</ng-template>

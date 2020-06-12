@@ -1,0 +1,56 @@
+.item-card{
+    display: inline-block;
+    width: 20rem;
+    height: 15rem;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+.item-card:hover{
+   cursor: pointer;
+}
+
+.item-card:hover .background-image{
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.item-card:hover .box{
+    opacity: 0.9;
+}
+
+
+.item-card .background-image{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+
+}
+
+.item-card .box{
+    display: block;
+    position: absolute;
+    background-color: white;
+    opacity: 0.7;
+    padding: 2px 18px;
+    text-align: center;
+    color: rgb(78, 70, 70);
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    border: 1px solid rgb(100, 98, 98);
+
+
+}
+
+.item-card .box .title{
+    font-size: 2rem;
+}
+.item-card .box .desc{
+    font-size: 1rem;
+}
+

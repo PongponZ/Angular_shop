@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "react-lesson-db": {
+      "hosting": {
+        "interview-shopping": [
+          "react-lesson-db"
+        ]
+      }
+    }
+  }
+}
